@@ -1,0 +1,5 @@
+# setting file for chatty
+
+news-feed-agent:
+  params:
+    user-agent: "linux:examplenewsagent:v0.0.1 (by /u/unknown)"
