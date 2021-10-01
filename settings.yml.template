@@ -5,6 +5,8 @@ model:
 
 chatty:
   params:
+    user_tag: "Query"
+    bot_tag: "Response"
     rolling_prompt: 2
     log_conversation: True
 
