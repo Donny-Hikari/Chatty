@@ -1,5 +1,13 @@
 # setting file for chatty
 
+model:
+  name: "124M"
+
+chatty:
+  params:
+    rolling_prompt: 2
+    log_conversation: True
+
 news-feed-agent:
   params:
     user-agent: "linux:examplenewsagent:v0.0.1 (by /u/unknown)"
