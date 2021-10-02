@@ -6,7 +6,7 @@ from utils import load_settings
 def get_reddit_news(params):
     assert params['user-agent'], "An unique user agent name is required by reddit"
 
-    res = requests.get(f"https://www.reddit.com/r/{params['reddit-topic']}.json",
+    res = requests.get(f"https://www.reddit.com/r/{params['reddit_topic']}.json",
         headers={
             "accept": "application/json",
             "user-agent": params['user-agent'],
@@ -21,10 +21,10 @@ def get_reddit_news(params):
         if v['data']['author'] == "NewsModTeam":
             continue
         news.append(str(len(news)+1) + ". " + v['data']['title'])
-    if 'entries-limit' in params.keys():
-        news = news[:params['entries-limit']]
+    if 'entries_limit' in params.keys() and params['entries_limit'] > 0:
+        news = news[:params['entries_limit']]
     return '\n'.join(news)
 
 if __name__ == "__main__":
     settings = load_settings()
-    print(get_reddit_news(settings['news-feed-agent']['params']))
+    print(get_reddit_news(settings['news_feed_agent']['params']))

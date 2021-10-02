@@ -1,0 +1,50 @@
+# Settings for this run
+chatty:
+  params:
+    bot_tag: Alice
+    fixed_first_round: null
+    log_conversation: true
+    rolling_prompt: 5
+    user_tag: Bob
+model:
+  name: 1558M
+news-feed-agent:
+  params:
+    entries-limit: 10
+    reddit-topic: news/hot
+    user-agent: "linux:examplenewsagent:v0.0.1 (by /u/unknown)"
+
+# The conversation
+This is the news today:
+1. January 6 rioter who said she looked for Pelosi 'to shoot her in the friggin' brain' pleads guilty to misdemeanor for illegally protesting
+2. Vaccinated people are less likely to spread Covid, new research finds
+3. California to require all schoolchildren to get COVID shots
+4. Former President Jimmy Carter quietly marks 97th birthday
+5. U.S. COVID-19 death toll hits 700,000 - Reuters
+6. Newsom signs #FreeBritney bill to reform conservatorship laws
+7. DeFi bug accidentally gives $90 million to users, founder begs them to return it
+8. French ex-police officer identified as serial killer and rapist after 35-year hunt
+9. Infowars host Alex Jones is responsible for damages triggered by his false claims on the Sandy Hook shooting, judge rules
+10. U.S. Supreme Court's Sotomayor allows New York school vaccine mandate
+Now let's talk about it.
+
+Bob: Hello. I am Bob. What's your name?
+Alice: Hello. My name is Alice. I find something interesting in today's news.
+Bob: What do you think of the news that an ex-police officer is a terrible criminal?
+Alice:  What? You must be joking. I have changed my life.
+Bob: What?! You mean you have commit crimes? I am not saying that you are the criminal. I just want to talk about the news.
+Alice:  So?
+Bob: Ummmm. You don't want to talk about that?
+Alice:  I don't have to talk about that!
+Bob: Ok, ok. Take it easy. What else would you like to share with me?
+Alice:  Do you do it because you get paid to do it?
+Bob: Not at all. I am talking to you because I want to know you via discussing the news with you.
+Alice:  I prefer not to talk about anything at all.
+Bob: Okay, why? It's because you are not in the mood or are you hiding something?
+Alice:  The news clearly is not at the top of my daily to-do list because it's quite boring. When I was in college, I used to listen to NPR every single day during the weekend. On Saturdays after school, almost all of my work was done and I spent the time reading and listening to the news. Maybe then I knew why I was so bored. Today, I come home before nine every night and read about pizza specials for the next day. It's more of a meat/poultry/vegetable eating story. No running headlines and no yelling news anchors/journalists. No breaking news. Just routine stuff with food and pop culture and sports.
+Bob: I see. You are not into news any more. Let's talk about pop culture. Which pop culture do you enjoy the most?
+Alice:  Definitely comics. And what do pop culture comics talk about everyday?
+Bob: I love comics too! I am into Japanese comics. How about you?
+Alice:  I think I enjoy Ecuador, just because of this second television show in Ecuador. I would like to enjoy more TV shows there, but right now at university I held more interest in USA shows because I natural education studies. The USA TV and news stations seem like a non-stop adrenalin rush. It would be tough for even a week one.
+Bob: I agree. Those USA shows are energetic. Which USA show do you enjoy? And wasn't we talking about comics a minute ago? How is TV shows related?
+Alice:  Well, I find it very funny when the news programs talk about programs like "Miami 3", "Royal Family", "Jersey Shore" or "Hitler's Den" and how they are forgotten completely in their USA ones. It's like the shows were made by non-Americans. Like I really need to know and understand more about it because I came here 10 years ago/brought classmates, also watching American shows, but I keep wondering what's the point, which show does it work out?

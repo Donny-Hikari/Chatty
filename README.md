@@ -25,7 +25,7 @@ $ pip install -r requirements.txt
 
 2. Change `model.name` in `settings.yml` to the model you have downloaded.
 
-3. Change `news-feed-agent.params.user-agent` in `settings.yml` to anything appropriate following [Reddit API rules](https://github.com/reddit-archive/reddit/wiki/API).
+3. Change `news_feed_agent.params.user-agent` in `settings.yml` to anything appropriate following [Reddit API rules](https://github.com/reddit-archive/reddit/wiki/API).
 
 # Running
 

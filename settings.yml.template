@@ -7,12 +7,14 @@ chatty:
   params:
     user_tag: "Query"
     bot_tag: "Response"
-    rolling_prompt: 2
+    rolling_prompt: 5
     log_conversation: True
     fixed_first_round: null
+    example_conversation: "{user_tag}: Hello. I am {user_tag}. What's your name?\n{bot_tag}: Hello. My name is {bot_tag}. I find something interesting in today's news."
+    fixed_prompt: "This is the news today:\n{news_feed}\nNow let's talk about it.\n\n{example_conversation}\n"
 
-news-feed-agent:
+news_feed_agent:
   params:
-    reddit-topic: "news/hot"
-    entries-limit: -1 # -1 for unlimited
+    reddit_topic: "news/hot"
+    entries_limit: -1 # -1 for unlimited
     user-agent: "linux:examplenewsagent:v0.0.1 (by /u/unknown)"

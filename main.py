@@ -9,11 +9,10 @@ import os
 import numpy as np
 import tensorflow as tf
 import datetime
-import yaml
 
 import model, sample, encoder
 
-from utils import load_settings
+from utils import load_settings, yaml
 from reddit_news import get_reddit_news
 
 settings = load_settings()
@@ -128,7 +127,7 @@ def get_sample_news_feed():
     return "1. It\'s sunny today.\n2. There is a huge meteorite flying by the earth."
 
 def get_news_feed():
-    return get_reddit_news(settings['news-feed-agent']['params'])
+    return get_reddit_news(settings['news_feed_agent']['params'])
 
 def news_topic_chatty(enc, sess, context, output, params):
     """
@@ -147,15 +146,18 @@ def news_topic_chatty(enc, sess, context, output, params):
     rolling_prompt = chatty_params['rolling_prompt']
     log_conversation = chatty_params['log_conversation']
     fixed_first_round = chatty_params['fixed_first_round']
+    f_example_conversation = chatty_params['example_conversation']
+    f_fixed_prompt = chatty_params['fixed_prompt']
+
     chat_log_dir = "test-results"
     first_round = f"{user_tag}: {fixed_first_round}\n{bot_tag}: " if fixed_first_round else None
 
     def get_example_conversation():
         # return f"{user_tag}: Hello. I am {user_tag}. What's your name?\n{bot_tag}: Hello. My name is {bot_tag}."
-        return f"{user_tag}: Hello. I am {user_tag}. What's your name?\n{bot_tag}: Hello. My name is {bot_tag}. I find something interesting in today's news."
+        return f_example_conversation.format(user_tag=user_tag, bot_tag=bot_tag)
 
-    fixed_prompt = "This is the news today:\n" + get_news_feed() + "\nNow let's talk about it.\n\n" + get_example_conversation() + "\n"
-    chat_log_fn = os.path.join(chat_log_dir, f"{datetime.datetime.now():%Y-%m-%d %H.%M.%S.%f}")
+    fixed_prompt = f_fixed_prompt.format(news_feed=get_news_feed(), example_conversation=get_example_conversation())
+    chat_log_fn = os.path.join(chat_log_dir, f"{datetime.datetime.now():%Y-%m-%d %H.%M.%S.%f}.txt")
 
     print("="*40 + " Fixed Prompt " + "="*40)
     print(fixed_prompt)
@@ -222,7 +224,8 @@ def news_topic_chatty(enc, sess, context, output, params):
         if len(past_memory) > rolling_prompt:
             past_memory.pop(0)
 
-    chat_log_file.close()
+    if log_conversation:
+        chat_log_file.close()
 
 def interact_model(
     model_name='124M',
