@@ -9,7 +9,10 @@ chatty:
     bot_tag: "Response"
     rolling_prompt: 2
     log_conversation: True
+    fixed_first_round: None
 
 news-feed-agent:
   params:
+    reddit-topic: "news/hot"
+    entries-limit: -1 # -1 for unlimited
     user-agent: "linux:examplenewsagent:v0.0.1 (by /u/unknown)"

@@ -146,14 +146,15 @@ def news_topic_chatty(enc, sess, context, output, params):
     bot_tag = chatty_params['bot_tag']
     rolling_prompt = chatty_params['rolling_prompt']
     log_conversation = chatty_params['log_conversation']
+    fixed_first_round = chatty_params['fixed_first_round']
     chat_log_dir = "test-results"
-    fixed_first_round = f"{user_tag}: What is it?\n{bot_tag}: "
+    first_round = f"{user_tag}: {fixed_first_round}\n{bot_tag}: " if fixed_first_round else None
 
     def get_example_conversation():
         # return f"{user_tag}: Hello. I am {user_tag}. What's your name?\n{bot_tag}: Hello. My name is {bot_tag}."
         return f"{user_tag}: Hello. I am {user_tag}. What's your name?\n{bot_tag}: Hello. My name is {bot_tag}. I find something interesting in today's news."
 
-    fixed_prompt = "The news today:\n" + get_news_feed() + "\nNow let's talk about it.\n\n" + get_example_conversation() + "\n"
+    fixed_prompt = "This is the news today:\n" + get_news_feed() + "\nNow let's talk about it.\n\n" + get_example_conversation() + "\n"
     chat_log_fn = os.path.join(chat_log_dir, f"{datetime.datetime.now():%Y-%m-%d %H.%M.%S.%f}")
 
     print("="*40 + " Fixed Prompt " + "="*40)
@@ -172,16 +173,16 @@ def news_topic_chatty(enc, sess, context, output, params):
 
     past_memory = []
     while True:
-        if not fixed_first_round:
+        if not first_round:
             try:
                 raw_prompt = read_chat_prompt(user_tag, bot_tag)
             except (EOFError, KeyboardInterrupt) as e:
                 print(e)
                 break
         else:
-            print(fixed_first_round)
-            raw_prompt = fixed_first_round
-            fixed_first_round = None
+            print(first_round)
+            raw_prompt = first_round
+            first_round = None
         raw_text = raw_prompt
 
         if rolling_prompt:
