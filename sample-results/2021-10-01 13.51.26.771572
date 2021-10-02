@@ -1,0 +1,57 @@
+# Settings for this run
+chatty:
+  params:
+    bot_tag: Alice
+    log_conversation: true
+    rolling_prompt: 5
+    user_tag: Bob
+model:
+  name: 1558M
+news-feed-agent:
+  params:
+    user-agent: "linux:examplenewsagent:v0.0.1 (by /u/unknown)"
+
+# The conversation
+The news today:
+1. Infowars host Alex Jones is responsible for damages triggered by his false claims on the Sandy Hook shooting, judge rules
+2. California enacts law to strip badges from bad officers
+3. Covid is killing rural Americans at twice the rate of people in urban areas
+4. Jeff Bezos' Blue Origin is a 'toxic' workplace, some current and ex-workers claim in essay
+5. California synagogue shooter sentenced to life in prison without the possibility of parole
+6. Apple and Disney among companies backing groups against US climate bill
+7. Ban on 'surprise' medical bills on track for Jan. 1 rollout
+8. Newsom signs bill enabling return of seized Bruce's Beach to descendants of original Black owners
+9. Far-right militia group membership surged after Capitol attack, hack shows | US Capitol attack
+10. Texas man, 24, admits shooting at Minneapolis police station during riot
+11. Flag-wearing man throws Molotov cocktail into Austin Dems HQ
+12. Houston man's body found in Wyoming where Gabby Petito's remains were uncovered
+13. Tyson Foods says 91% of workforce is vaccinated after imposing mandate
+14. Drug Enforcement Administration seizes 1.8 million fentanyl-laced pills and arrests more than 800 in nationwide sting
+15. California synagogue killer not allowed to speak as he gets life without parole
+16. Shakira: Singer attacked by a pair of wild boars
+17. "Google" is most searched word on Bing, Google says
+18. Smith &amp; Wesson announces it will move its headquarters out of Massachusetts, citing proposed ban on making assault weapons
+19. Two students accused of planning a shooting at Farmington High School
+20. Miami mayoral candidate Frank Pichel wanted in Keys on felony charge of impersonating a cop
+21. ‘You can’t sue your way to the moon’: Elon Musk to Jeff Bezos on space feud
+22. Number of unvaccinated United staff drops from 593 to 320 after airline said it would fire them
+23. Louisiana public schools may allow parents to choose whether a child quarantines after Covid-19 exposure
+24. 'Cops were firing like crazy': Video shows officers open fire in deadly gas station shooting
+25. Woman shot by LBUSD safety officer is brain dead, family says; boyfriend demands justice • Long Beach Post News
+Now let's talk about it.
+
+Bob: Hello. I am Bob. What's your name?
+Alice: Hello. My name is Alice. I find something interesting in today's news.
+
+================================================================================
+2021-10-01 13:51:35.849452: I tensorflow/stream_executor/dso_loader.cc:152] successfully opened CUDA library libcublas.so.10.0 locally
+ That Jeff Bezos started a group. I assume that is for you to offer to buy 850 sites archives in order to pay the FBI to delete all the evidence.
+Query: What's wrong with Jeff Bezos? FBI? That sounds terrifying.
+Response:  Please do provide Amazon's phone number.
+Query: What do you want to do with that?
+Response:  Create something great, in which there will be no need of big foundations, but where users will pay significantly like an internet cafe.
+Query: That sounds great! The phone number you are looking for is 1 (866) 749-7538. Could you tell me more about your idea?
+Response:  Let's create a trusted computing service. Their names are like their information online. These are the people you buy from. These are the websites you browse. Where you get content and and information. This way, you only need a computer and internet that is fantastic richified information and will make you a unique and rich person.
+Query: Wow. That is a really exciting idea! But I am still a bit confused about how it works. For example, what will the trusted computing service be used for? And who are the people and what are the websites you are talking about?
+Response:  Wes Anderson film "GIFT". No spoilers, but it is about a problem while watching a TV show. The team behind it wanted to insert a binary beginning with "Monkey". It could be any ZIP code is in at least 9 of those 9 ZIP codes, and anything on the blackboard is in one of those 9 ZIP codes. The whole world would see that it is forever meant for itself in 9 other ZIP codes. The 911 number would be within any one of the 9 to 9!
+Query: 

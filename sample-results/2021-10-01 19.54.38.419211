@@ -1,0 +1,56 @@
+# Settings for this run
+chatty:
+  params:
+    bot_tag: Alice
+    log_conversation: true
+    rolling_prompt: 5
+    user_tag: Bob
+model:
+  name: 1558M
+news-feed-agent:
+  params:
+    user-agent: "linux:examplenewsagent:v0.0.1 (by /u/unknown)"
+
+# The conversation
+The news today:
+1. Former President Jimmy Carter quietly marks 97th birthday
+2. Infowars host Alex Jones is responsible for damages triggered by his false claims on the Sandy Hook shooting, judge rules
+3. California to require all schoolchildren to get COVID shots
+4. Covid is killing rural Americans at twice the rate of people in urban areas
+5. Justice Kavanaugh tests positive for COVID, has no symptoms
+6. DeFi bug accidentally gives $90 million to users, founder begs them to return it
+7. Michigan VA nurse charged with stealing and selling COVID-19 vaccination cards
+8. California enacts law to strip badges from bad officers
+9. 'Complicit and compliant' officials fixed boxing matches at 2016 Olympics, investigation finds
+10. U.S. COVID-19 death toll hits 700,000 - Reuters
+11. Jeff Bezos' Blue Origin is a 'toxic' workplace, some current and ex-workers claim in essay
+12. Newsom signs #FreeBritney bill to reform conservatorship laws
+13. Far-right militia group membership surged after Capitol attack, hack shows | US Capitol attack
+14. El Salvador just started mining bitcoin using the energy from volcanoes
+15. California synagogue shooter sentenced to life in prison without the possibility of parole
+16. London police warn women to be wary of lone officers after Sarah Everard murder
+17. Judge issues last-minute delay to Montana abortion laws hours after taking case
+18. Suspect in custody after active shooter reported at Houston prep school
+19. Two students accused of planning a shooting at Farmington High School
+20. Ban on 'surprise' medical bills on track for Jan. 1 rollout
+21. Newsom signs bill enabling return of seized Bruce's Beach to descendants of original Black owners
+22. Texas man, 24, admits shooting at Minneapolis police station during riot
+23. Man trying to sell catalytic converter arrested for meth instead
+24. Louisiana public schools may allow parents to choose whether a child quarantines after Covid-19 exposure
+25. Drug Enforcement Administration seizes 1.8 million fentanyl-laced pills and arrests more than 800 in nationwide sting
+Now let's talk about it.
+
+Bob: Hello. I am Bob. What's your name?
+Alice: Hello. My name is Alice. I find something interesting in today's news.
+Bob: What is it?
+Alice:  I believe we have all been victim of conspiracy theories.
+Bob: Wow. That's a good point. Which conspiracy theories do you think hurt us the most?
+Alice:  The one about the Bilderberg Group. They don't know what they're doing. Think the idea of government-is-better-than-anyone hoax is over. And fish scales babies. Hey, isn't Heidi Klum funny?!
+Bob: Yeah, I guess. I haven't heard about her though. It is interesting that you say the Bilderberg Group doesn't know what they're doing. It seems that they are trying to deal with world problems or try to control the direction of the world. I agree with you that governments may also struggle to maintain peace of society. However that doesn't mean all conspiracy theories are fake. We need to keep an eye on the worst that could happen to prevent it.
+Alice:  I'm happy you appreciate my point because I think we humans will get to the last argument.
+Bob: It doesn't have to be like that. We share our thoughts and knowledge, and we learn from each other. I am still interested of the news today. What do you think about COVID? Have you heard about it before?
+Alice:  I'm not a member. I'm curious to know what some paranoid person on the net is talking about. Let me give my contact info and check my email. Did that help?
+Bob: COVID is not a club or something. It is a pandemic going on right now and has killed millions of people. And some rumors say that it is a biological weapon invented for some purpose. By the way, I can't see your contact info. I can talk with you like this anyway. So what do you think of COVID? Do you think it is a conspiracy or do you have other hypothesis??
+Alice:  I agree with you that COVID might be a biological weapon. It scared me at first. We need to study exactly what it is. I would say it is some kind of divine magic formula. Could it cause scizophrenia? Other illnesses? Should conspiracy theory holders be shutting down animal test labs? Could we use some weird diseases and account for these alternative diseases? Doesn't dog salivary stigmata keep being found in the world and be in good stock out during the winter and then disappear? Who knows.
+Bob: COVID is kind of similar to SARS. It is caused by a virus named SARS-COV-2 actually. It spreads faster, although the death rate is lower compare to SARS. It has caused 5 to 10 million death over the world.
+Alice:  My mom told me about COVID a few years ago. She told me that it is on loan from some CIA. I believe it is a false prophetic prophecy. Why would they give a messenger to the one His Holiness? They were snoopers about getting rid of that dumb relatively oppressing president in one night and having his sacrificial kryptonite. They better make sure I can keep my mom's mouth shut always. She never went out of school when we got money trouble.

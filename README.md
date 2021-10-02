@@ -21,11 +21,11 @@ $ pip install -r requirements.txt
 
 # Configuration
 
-1. Copy `settings.yml.template` into `settings.yml`.
+1. Copy [settings.yml.template](settings.yml.template) into [settings.yml](settings.yml).
 
-2. Change `model.name` in `settings.yml` to the model you have downloaded.
+2. Change `model.name` in [settings.yml](settings.yml) to the model you have downloaded.
 
-3. Change `news-feed-agent.params.user-agent` to anything appropriate following [Reddit API rules](https://github.com/reddit-archive/reddit/wiki/API).
+3. Change `news-feed-agent.params.user-agent` in [settings.yml](settings.yml) to anything appropriate following [Reddit API rules](https://github.com/reddit-archive/reddit/wiki/API).
 
 # Running
 
@@ -36,3 +36,7 @@ $ python main.py
 ```
 
 And enjoy chatting with Chatty.
+
+# Sample Results
+
+Some sample results are available in [sample-results](./sample-results). Note that these results may be generated on older versions of Chatty and the settings may not work with the current version.

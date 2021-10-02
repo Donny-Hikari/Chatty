@@ -9,7 +9,7 @@ chatty:
     bot_tag: "Response"
     rolling_prompt: 2
     log_conversation: True
-    fixed_first_round: None
+    fixed_first_round: null
 
 news-feed-agent:
   params:
